@@ -1,0 +1,39 @@
+[0.000000] (-) TimerEvent: {}
+[0.000534] (-) JobUnselected: {'identifier': 'kutta_rl_controller'}
+[0.000564] (kutta_sim) JobQueued: {'identifier': 'kutta_sim', 'dependencies': OrderedDict()}
+[0.000588] (kutta_sim) JobStarted: {'identifier': 'kutta_sim'}
+[0.099845] (-) TimerEvent: {}
+[0.200028] (-) TimerEvent: {}
+[0.300188] (-) TimerEvent: {}
+[0.400337] (-) TimerEvent: {}
+[0.500496] (-) TimerEvent: {}
+[0.600663] (-) TimerEvent: {}
+[0.659218] (kutta_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/kutta_sim', 'build', '--build-base', '/home/cuckylinux/ros2_ws/build/kutta_sim/build', 'install', '--record', '/home/cuckylinux/ros2_ws/build/kutta_sim/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cuckylinux/ros2_ws/src/kutta_sim', 'env': {'CONDA_PROMPT_MODIFIER': '(base)', 'MAIL': '/var/spool/mail/cuckylinux', 'HYPRLAND_CMD': 'Hyprland --watchdog-fd 4', 'USER': 'cuckylinux', 'HYPRLAND_INSTANCE_SIGNATURE': '59f9f2688ac508a0584d1462151195a6c4992f99_1775138151_778164276', 'CLAUDE_CODE_ENTRYPOINT': 'cli', 'STARSHIP_SHELL': 'fish', 'GIT_EDITOR': 'true', 'HOSTNAME': 'Cucky', 'ILLOGICAL_IMPULSE_VIRTUAL_ENV': '~/.local/state/quickshell/.venv', 'XDG_SESSION_TYPE': 'wayland', 'XDG_CACHE_HOME': '/home/cuckylinux/.cache', 'SHLVL': '6', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu::/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/cuckylinux', 'TERMINFO': '/usr/lib/kitty/terminfo', 'CONDA_SHLVL': '1', 'MOZ_ENABLE_WAYLAND': '1', 'KITTY_INSTALLATION_DIR': '/usr/lib/kitty', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'KITTY_PID': '1992', 'DISTROBOX_ENTER_PATH': '/usr/bin/distrobox-enter', 'XDG_STATE_HOME': '/home/cuckylinux/.local/state', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'container': 'podman', 'NVM_DIR': '/home/cuckylinux/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.archlinux.org', 'QT_QPA_PLATFORMTHEME': 'kde', 'WAYLAND_DISPLAY': 'wayland-1', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cuckylinux', 'ONSHAPE_SECRET_KEY': 'xwr1MwZ7XqrU8B5qoTs6Wc8ZvpJLJkUsSmjuJfWDYk0mYlAE', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERMINFO_DIRS': '/usr/share/terminfo:/run/host/usr/share/terminfo', 'TERM': 'xterm-kitty', 'XDG_SESSION_ID': '1', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/cuckylinux/.local/bin:/opt/ros/humble/bin:/home/cuckylinux/.local/bin:/home/cuckylinux/.pyenv/bin:/home/cuckylinux/miniconda3/bin:/home/cuckylinux/miniconda3/condabin:/home/cuckylinux/.local/bin:/home/cuckylinux/.cargo/bin:/home/cuckylinux/.local/bin:/home/cuckylinux/.pyenv/shims:/home/cuckylinux/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/sbin:/sbin:/bin', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_MENU_PREFIX': 'plasma-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Hyprland', 'XDG_DATA_HOME': '/home/cuckylinux/.local/share', 'XDG_CONFIG_HOME': '/home/cuckylinux/.config', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/cuckylinux/miniconda3/bin/python', 'SHELL': '/usr/bin/bash', 'IGN_GAZEBO_SYSTEM_PLUGIN_PATH': '/opt/ros/humble/lib', 'KITTY_WINDOW_ID': '1', 'CONDA_DEFAULT_ENV': 'base', 'CLAUDECODE': '1', 'ELECTRON_OZONE_PLATFORM_HINT': 'auto', 'PWD': '/home/cuckylinux/ros2_ws/build/kutta_sim', 'CONTAINER_ID': 'ros2-humble', 'QT_QPA_PLATFORM': 'wayland;xcb', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg', 'ONSHAPE_ACCESS_KEY': 'on_c5vQMgacEuRjKkI1PaKZ9', 'CONDA_EXE': '/home/cuckylinux/miniconda3/bin/conda', 'XDG_BACKEND': 'wayland', 'NVM_CD_FLAGS': '', 'PYENV_ROOT': '/home/cuckylinux/.pyenv', 'XDG_DATA_DIRS': '/home/cuckylinux/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'STARSHIP_SESSION_KEY': '2809311151196557', 'PYTHONPATH': '/home/cuckylinux/ros2_ws/build/kutta_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/cuckylinux/miniconda3', 'ONSHAPE_API': 'https://cad.onshape.com', 'COLCON': '1', 'TERMINAL': 'kitty -1', 'NVM_RC_VERSION': ''}, 'shell': False}
+[0.700765] (-) TimerEvent: {}
+[0.800928] (-) TimerEvent: {}
+[0.901086] (-) TimerEvent: {}
+[0.922286] (kutta_sim) StdoutLine: {'line': b'running egg_info\n'}
+[0.922712] (kutta_sim) StdoutLine: {'line': b'writing ../../build/kutta_sim/kutta_sim.egg-info/PKG-INFO\n'}
+[0.922853] (kutta_sim) StdoutLine: {'line': b'writing dependency_links to ../../build/kutta_sim/kutta_sim.egg-info/dependency_links.txt\n'}
+[0.922981] (kutta_sim) StdoutLine: {'line': b'writing entry points to ../../build/kutta_sim/kutta_sim.egg-info/entry_points.txt\n'}
+[0.923130] (kutta_sim) StdoutLine: {'line': b'writing requirements to ../../build/kutta_sim/kutta_sim.egg-info/requires.txt\n'}
+[0.923192] (kutta_sim) StdoutLine: {'line': b'writing top-level names to ../../build/kutta_sim/kutta_sim.egg-info/top_level.txt\n'}
+[0.924546] (kutta_sim) StdoutLine: {'line': b"reading manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'\n"}
+[0.925464] (kutta_sim) StdoutLine: {'line': b"writing manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'\n"}
+[0.925675] (kutta_sim) StdoutLine: {'line': b'running build\n'}
+[0.925754] (kutta_sim) StdoutLine: {'line': b'running build_py\n'}
+[0.925810] (kutta_sim) StdoutLine: {'line': b'copying kutta_sim/sim_node.py -> /home/cuckylinux/ros2_ws/build/kutta_sim/build/lib/kutta_sim\n'}
+[0.925943] (kutta_sim) StdoutLine: {'line': b'running install\n'}
+[0.926179] (kutta_sim) StdoutLine: {'line': b'running install_lib\n'}
+[0.926839] (kutta_sim) StdoutLine: {'line': b'copying /home/cuckylinux/ros2_ws/build/kutta_sim/build/lib/kutta_sim/sim_node.py -> /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim\n'}
+[0.927540] (kutta_sim) StdoutLine: {'line': b'byte-compiling /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim/sim_node.py to sim_node.cpython-310.pyc\n'}
+[0.928870] (kutta_sim) StdoutLine: {'line': b'running install_data\n'}
+[0.929024] (kutta_sim) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.930921] (kutta_sim) StdoutLine: {'line': b"removing '/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[0.931166] (kutta_sim) StdoutLine: {'line': b'Copying ../../build/kutta_sim/kutta_sim.egg-info to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info\n'}
+[0.931872] (kutta_sim) StdoutLine: {'line': b'running install_scripts\n'}
+[0.953689] (kutta_sim) StdoutLine: {'line': b'Installing kutta_sim script to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/kutta_sim\n'}
+[0.953912] (kutta_sim) StdoutLine: {'line': b"writing list of installed files to '/home/cuckylinux/ros2_ws/build/kutta_sim/install.log'\n"}
+[0.975025] (kutta_sim) CommandEnded: {'returncode': 0}
+[0.986980] (kutta_sim) JobEnded: {'identifier': 'kutta_sim', 'rc': 0}
+[0.987478] (-) EventReactorShutdown: {}

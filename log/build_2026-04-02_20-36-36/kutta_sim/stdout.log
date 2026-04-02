@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/kutta_sim/kutta_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/kutta_sim/kutta_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/kutta_sim/kutta_sim.egg-info/entry_points.txt
+writing requirements to ../../build/kutta_sim/kutta_sim.egg-info/requires.txt
+writing top-level names to ../../build/kutta_sim/kutta_sim.egg-info/top_level.txt
+reading manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+copying kutta_sim/sim_node.py -> /home/cuckylinux/ros2_ws/build/kutta_sim/build/lib/kutta_sim
+running install
+running install_lib
+copying /home/cuckylinux/ros2_ws/build/kutta_sim/build/lib/kutta_sim/sim_node.py -> /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim
+byte-compiling /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim/sim_node.py to sim_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/kutta_sim/kutta_sim.egg-info to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info
+running install_scripts
+Installing kutta_sim script to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/kutta_sim
+writing list of installed files to '/home/cuckylinux/ros2_ws/build/kutta_sim/install.log'

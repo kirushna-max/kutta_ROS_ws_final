@@ -58,9 +58,18 @@
   <!-- The simulation kinematic tree. All bodies, joints, and geoms live here. -->
   <worldbody>
 
+    <!-- ================== GROUND PLANE ================== -->
+    <!-- Infinite flat floor at z=0. condim=3 enables friction (tangential forces).  -->
+    <!-- friction="1 0.005 0.0001": sliding, torsional, rolling coefficients.        -->
+    <!-- contype/conaffinity=1 so it collides with the knee meshes (contype=1).       -->
+    <geom name="floor" type="plane" size="0 0 1" pos="0 0 0"
+          rgba="0.6 0.6 0.6 1" condim="3" friction="1 0.005 0.0001"
+          contype="1" conaffinity="1"/>
+
     <!-- ================== BASE LINK (Main Torso) ================== -->
-    <!-- pos: initial spawn height — legs are ~0.27 m below base, so 0.3 m clears ground -->
-    <body name="base_link" pos="0 0 0.5" childclass="kutta">
+    <!-- spawn height 0.35 m: with all joints at 0, feet sit ~0.18 m above floor    -->
+    <!-- so the robot settles to standing after ~0.2 s of free fall.                 -->
+    <body name="base_link" pos="0 0 0.35" childclass="kutta">
 
       <!-- freejoint: allows the base to translate and rotate freely in 3D (6-DoF). -->
       <!-- Without this the robot is fixed to the world. -->

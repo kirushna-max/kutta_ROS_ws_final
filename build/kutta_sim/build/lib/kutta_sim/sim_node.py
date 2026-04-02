@@ -28,8 +28,10 @@ viewer    (bool)    Launch MuJoCo passive viewer  [default: true]
 """
 
 import threading
+import time
 
 import mujoco
+import mujoco.viewer
 import numpy as np
 import rclpy
 from rclpy.node import Node
@@ -98,10 +100,12 @@ class KuttaSimNode(Node):
             10,
         )
 
-        # ── Simulation timer at 200 Hz (dt = 0.005 s = kutta.xml timestep) ──
-        self._sim_timer = self.create_timer(
-            self._model.opt.timestep, self._sim_step_cb
-        )
+        # ── Simulation loop in a dedicated thread ────────────────────────────
+        # ROS timers at 5 ms can drift on some systems; using a tight real-time
+        # loop with time.sleep is more accurate and avoids callback stacking.
+        self._running = True
+        self._sim_thread = threading.Thread(target=self._sim_loop, daemon=True)
+        self._sim_thread.start()
 
         # ── Optional passive viewer ───────────────────────────────────────────
         self._viewer = None
@@ -129,21 +133,50 @@ class KuttaSimNode(Node):
             with self._lock:
                 self._target_pos[:] = msg.data
 
-    # ── Simulation step ──────────────────────────────────────────────────────
+    # ── Simulation loop (dedicated thread) ───────────────────────────────────
 
-    def _sim_step_cb(self) -> None:
-        # Apply latest joint position targets to MuJoCo actuators
-        with self._lock:
-            self._data.ctrl[:] = self._target_pos
+    def _sim_loop(self) -> None:
+        """Real-time physics loop.
 
-        # Advance physics by one timestep
-        mujoco.mj_step(self._model, self._data)
+        Runs mj_step at exactly model.opt.timestep wall-clock seconds per step.
+        Uses a sleep-then-busywait strategy: sleep most of the interval, then
+        spin on monotonic clock for the last fraction to get sub-millisecond
+        accuracy without burning CPU the whole time.
+        """
+        dt = float(self._model.opt.timestep)   # 0.005 s = 200 Hz
+        BUSYWAIT_MARGIN = 0.0005               # busywait the last 0.5 ms
 
-        # Sync viewer if active
-        if self._viewer is not None and self._viewer.is_running():
-            self._viewer.sync()
+        next_step_time = time.monotonic()
 
-        self._publish_sensors()
+        while self._running:
+            next_step_time += dt
+
+            # Coarse sleep — give up most of the remaining time
+            sleep_time = next_step_time - time.monotonic() - BUSYWAIT_MARGIN
+            if sleep_time > 0:
+                time.sleep(sleep_time)
+
+            # Fine busywait for the last 0.5 ms
+            while time.monotonic() < next_step_time:
+                pass
+
+            # Apply latest joint position targets
+            with self._lock:
+                self._data.ctrl[:] = self._target_pos
+
+            # Advance physics
+            mujoco.mj_step(self._model, self._data)
+
+            # Sync viewer (non-blocking)
+            if self._viewer is not None and self._viewer.is_running():
+                self._viewer.sync()
+
+            if self._running:
+                try:
+                    self._publish_sensors()
+                except Exception:
+                    # Publisher context invalid during shutdown — exit cleanly
+                    break
 
     # ── Sensor publishing ────────────────────────────────────────────────────
 
@@ -210,6 +243,8 @@ class KuttaSimNode(Node):
     # ── Cleanup ──────────────────────────────────────────────────────────────
 
     def destroy_node(self):
+        self._running = False
+        self._sim_thread.join(timeout=2.0)
         if self._viewer is not None and self._viewer.is_running():
             self._viewer.close()
         super().destroy_node()
@@ -220,11 +255,12 @@ def main(args=None):
     node = KuttaSimNode()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, rclpy.executors.ExternalShutdownException):
         pass
     finally:
         node.destroy_node()
-        rclpy.shutdown()
+        if rclpy.ok():
+            rclpy.shutdown()
 
 
 if __name__ == "__main__":

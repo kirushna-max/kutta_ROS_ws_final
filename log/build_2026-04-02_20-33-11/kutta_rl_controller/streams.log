@@ -1,0 +1,21 @@
+[0.879s] Invoking command in '/home/cuckylinux/ros2_ws/src/kutta_rl_controller': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=📦[\u@ros2-humble \W]$ PYTHONPATH=/home/cuckylinux/ros2_ws/build/kutta_rl_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kutta_rl_controller build --build-base /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build install --record /home/cuckylinux/ros2_ws/build/kutta_rl_controller/install.log --single-version-externally-managed install_data
+[1.116s] running egg_info
+[1.117s] writing ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/PKG-INFO
+[1.117s] writing dependency_links to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/dependency_links.txt
+[1.117s] writing entry points to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/entry_points.txt
+[1.117s] writing requirements to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/requires.txt
+[1.117s] writing top-level names to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/top_level.txt
+[1.118s] reading manifest file '../../build/kutta_rl_controller/kutta_rl_controller.egg-info/SOURCES.txt'
+[1.119s] writing manifest file '../../build/kutta_rl_controller/kutta_rl_controller.egg-info/SOURCES.txt'
+[1.119s] running build
+[1.119s] running build_py
+[1.119s] running install
+[1.120s] running install_lib
+[1.121s] running install_data
+[1.121s] running install_egg_info
+[1.122s] removing '/home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller-0.1.0-py3.10.egg-info' (and everything under it)
+[1.123s] Copying ../../build/kutta_rl_controller/kutta_rl_controller.egg-info to /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller-0.1.0-py3.10.egg-info
+[1.123s] running install_scripts
+[1.142s] Installing rl_controller script to /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/kutta_rl_controller
+[1.142s] writing list of installed files to '/home/cuckylinux/ros2_ws/build/kutta_rl_controller/install.log'
+[1.164s] Invoked command in '/home/cuckylinux/ros2_ws/src/kutta_rl_controller' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.archlinux.org PS1=📦[\u@ros2-humble \W]$ PYTHONPATH=/home/cuckylinux/ros2_ws/build/kutta_rl_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kutta_rl_controller build --build-base /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build install --record /home/cuckylinux/ros2_ws/build/kutta_rl_controller/install.log --single-version-externally-managed install_data
