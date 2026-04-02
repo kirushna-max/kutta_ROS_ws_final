@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/kutta_rl_controller/kutta_rl_controller.egg-info
+writing ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/entry_points.txt
+writing requirements to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/requires.txt
+writing top-level names to ../../build/kutta_rl_controller/kutta_rl_controller.egg-info/top_level.txt
+writing manifest file '../../build/kutta_rl_controller/kutta_rl_controller.egg-info/SOURCES.txt'
+reading manifest file '../../build/kutta_rl_controller/kutta_rl_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/kutta_rl_controller/kutta_rl_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build
+creating /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib
+creating /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib/kutta_rl_controller
+copying kutta_rl_controller/rl_controller_node.py -> /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib/kutta_rl_controller
+copying kutta_rl_controller/__init__.py -> /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib/kutta_rl_controller
+running install
+running install_lib
+creating /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller
+copying /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib/kutta_rl_controller/rl_controller_node.py -> /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller
+copying /home/cuckylinux/ros2_ws/build/kutta_rl_controller/build/lib/kutta_rl_controller/__init__.py -> /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller
+byte-compiling /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller/rl_controller_node.py to rl_controller_node.cpython-310.pyc
+byte-compiling /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/ament_index
+creating /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/ament_index/resource_index
+creating /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/ament_index/resource_index/packages
+copying resource/kutta_rl_controller -> /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/ament_index/resource_index/packages
+copying package.xml -> /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/kutta_rl_controller
+creating /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/kutta_rl_controller/launch
+copying launch/controller.launch.py -> /home/cuckylinux/ros2_ws/install/kutta_rl_controller/share/kutta_rl_controller/launch
+running install_egg_info
+Copying ../../build/kutta_rl_controller/kutta_rl_controller.egg-info to /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/python3.10/site-packages/kutta_rl_controller-0.1.0-py3.10.egg-info
+running install_scripts
+Installing rl_controller script to /home/cuckylinux/ros2_ws/install/kutta_rl_controller/lib/kutta_rl_controller
+writing list of installed files to '/home/cuckylinux/ros2_ws/build/kutta_rl_controller/install.log'

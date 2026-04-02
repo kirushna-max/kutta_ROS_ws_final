@@ -1,0 +1,22 @@
+[0.863s] Invoking command in '/home/cuckylinux/ros2_ws/src/kutta_sim': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.archlinux.org PYTHONPATH=/home/cuckylinux/ros2_ws/build/kutta_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kutta_sim build --build-base /home/cuckylinux/ros2_ws/build/kutta_sim/build install --record /home/cuckylinux/ros2_ws/build/kutta_sim/install.log --single-version-externally-managed install_data
+[1.098s] running egg_info
+[1.098s] writing ../../build/kutta_sim/kutta_sim.egg-info/PKG-INFO
+[1.098s] writing dependency_links to ../../build/kutta_sim/kutta_sim.egg-info/dependency_links.txt
+[1.099s] writing entry points to ../../build/kutta_sim/kutta_sim.egg-info/entry_points.txt
+[1.099s] writing requirements to ../../build/kutta_sim/kutta_sim.egg-info/requires.txt
+[1.099s] writing top-level names to ../../build/kutta_sim/kutta_sim.egg-info/top_level.txt
+[1.100s] reading manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'
+[1.101s] writing manifest file '../../build/kutta_sim/kutta_sim.egg-info/SOURCES.txt'
+[1.101s] running build
+[1.101s] running build_py
+[1.101s] running install
+[1.102s] running install_lib
+[1.103s] running install_data
+[1.103s] copying launch/kutta_full.launch.py -> /home/cuckylinux/ros2_ws/install/kutta_sim/share/kutta_sim/launch
+[1.103s] running install_egg_info
+[1.105s] removing '/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info' (and everything under it)
+[1.105s] Copying ../../build/kutta_sim/kutta_sim.egg-info to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages/kutta_sim-0.1.0-py3.10.egg-info
+[1.106s] running install_scripts
+[1.124s] Installing kutta_sim script to /home/cuckylinux/ros2_ws/install/kutta_sim/lib/kutta_sim
+[1.125s] writing list of installed files to '/home/cuckylinux/ros2_ws/build/kutta_sim/install.log'
+[1.149s] Invoked command in '/home/cuckylinux/ros2_ws/src/kutta_sim' returned '0': CONDA_PROMPT_MODIFIER=(base) DEBUGINFOD_URLS=https://debuginfod.archlinux.org PYTHONPATH=/home/cuckylinux/ros2_ws/build/kutta_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cuckylinux/ros2_ws/install/kutta_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kutta_sim build --build-base /home/cuckylinux/ros2_ws/build/kutta_sim/build install --record /home/cuckylinux/ros2_ws/build/kutta_sim/install.log --single-version-externally-managed install_data

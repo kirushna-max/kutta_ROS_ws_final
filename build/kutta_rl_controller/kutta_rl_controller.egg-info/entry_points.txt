@@ -1,0 +1,3 @@
+[console_scripts]
+rl_controller = kutta_rl_controller.rl_controller_node:main
+
